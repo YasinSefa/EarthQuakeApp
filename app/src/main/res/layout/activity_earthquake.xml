@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="409dp"
+    android:layout_height="729dp"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#999999">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="225dp"
+        android:layout_marginTop="-11dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/earthquake" />
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back_arrow"
+        android:background="?android:selectableItemBackgroundBorderless"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="1dp"
+        android:padding="15dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DEPREM ÖNCESİ YAPMANIZ GEREKENLER"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:paddingStart="12dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="3dp"
+        tools:ignore="InvalidId">
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bulunduğunuz bölgenin deprem riskini değerlendirin ve yerel yetkililerin yayınladığı deprem planlarını inceleyin. Deprem tehlikesi ve güvenli alanlar hakkında bilgi edinin."
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt1"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingStart="15dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="3dp"
+        tools:ignore="InvalidId">
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ailenizle birlikte bir acil durum planı hazırlayın. Bu plan, aile üyelerinin nerede buluşacaklarını, acil durum iletişim numaralarını, ilkyardım becerilerini ve diğer önemli bilgileri içermelidir."
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt2"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingStart="15dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="3dp"
+        tools:ignore="InvalidId">
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Acil durum çantası, deprem sırasında ihtiyaç duyabileceğiniz temel malzemeleri içermelidir. Yiyecek, su, ilaçlar, el feneri, radyo, pil, şarj cihazları, hijyen malzemeleri ve birinci yardım kiti gibi öğeleri içeren bir çanta hazırlayın."
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt3"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingStart="15dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="3dp"
+        tools:ignore="InvalidId">
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Evinizin veya binanızın depreme dayanıklı olduğundan emin olun. Yapısal sorunlar varsa, bir uzmana danışarak düzeltmeler yapın. Kitaplık, dolap gibi ağır nesneleri düşme riskine karşı sabitleyin. Camları film veya koruyucu malzemelerle güçlendirin."
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt4"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingStart="15dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="3dp"
+        tools:ignore="InvalidId">
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ev veya binanızdaki acil çıkış yollarını belirleyin ve ailenize bu bilgiyi verin. Birden fazla çıkış noktası olması önemlidir. Ayrıca, acil durumun elektrik kesintisi ile birlikte gerçekleşebileceğini unutmayın, bu nedenle karanlıkta da etkili bir şekilde çıkış yapabilmeniz için el feneri veya başka bir ışık kaynağı bulundurun."
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt5"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingStart="15dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="3dp"
+        tools:ignore="InvalidId">
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DEPREM SIRASINDA YAPMANIZ GEREKENLER"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt6"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:paddingStart="12dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="3dp"
+        tools:ignore="InvalidId">
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Panik yapmadan sakin kalın ve hemen kendinizi koruma altına alın. Mümkünse, kapalı ve sağlam bir yerde (masa altı, iç duvar kenarı gibi) başınızı koruyacak şekilde çömelin ve başınızı ellerinizle kapatın. Eğer masaya veya başka bir koruyucu yere ulaşamıyorsanız, başınızı korumak için ellerinizle başınızı sıkıca kapatın ve dizlerinizin üzerine oturun."
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt7"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingStart="15dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="3dp"
+        tools:ignore="InvalidId">
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Deprem sırasında cam, cam parçaları ve diğer camlı nesneler büyük tehlike oluşturabilir. Pencerelerden, camlı kapılardan ve büyük aynalardan uzak durun."
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt8"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingStart="15dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="3dp"
+        tools:ignore="InvalidId">
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mümkünse, bina içinde değilse dışarıya, açık bir alana çıkın. Binanın çökme riski varsa, yanında bir yapı veya ağaç altına sığının. Elektrik direkleri, reklam panoları, büyük ağaçlar gibi düşme riski olan nesyalardan uzak durun."
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt9"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingStart="15dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="3dp"
+        tools:ignore="InvalidId">
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Deprem sırasında asansörleri kullanmaktan kaçının. Asansörlerin sıkışma riski yüksektir ve sıkıştığınızda kurtarmak zaman alabilir."
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt10"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingStart="15dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="3dp"
+        tools:ignore="InvalidId">
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Deprem sırasında gaz sızıntısı, yangın veya patlama riski olabilir. Gaz kokusu alıyorsanız hemen binayı terk edin ve yetkililere haber verin. Alev, patlama veya kimyasal sızıntı riski olan alanlardan uzak durun."
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt11"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingStart="15dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="3dp"
+        tools:ignore="InvalidId">
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sarsıntı sırasında düşme riski olan nesnelerden (raf, kitaplık, mobilya vb.) uzak durun. Başınızı korumak için eğer mümkünse, masanın veya başka bir koruyucu yüzeyin altına sığının."
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt12"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingStart="15dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="3dp"
+        tools:ignore="InvalidId">
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DEPREM SONRASI YAPMANIZ GEREKENLER"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt13"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:paddingStart="12dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="3dp"
+        tools:ignore="InvalidId">
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Deprem sonrasında güvende olduğunuzdan emin olun. Eğer tehlike altındaysanız, dışarıya çıkın ve güvenli bir bölgeye geçin. Yaralıysanız veya başka insanlar yardıma ihtiyaç duyuyorsa, sağlık hizmetlerine başvurun veya yardım talep edin."
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt14"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingStart="15dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="3dp"
+        tools:ignore="InvalidId">
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Deprem sonrasında yerel yetkililere (polis, itfaiye, sağlık ekipleri) durumu bildirin. Yardıma ihtiyacınız varsa veya başkalarının yardıma ihtiyacı olduğunu tespit ederseniz, yetkililere veya kurtarma ekiplerine haber verin."
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt15"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingStart="15dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="3dp"
+        tools:ignore="InvalidId">
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Deprem önceden hazırladığınız acil durum çantanızı kullanın. Yiyecek, su, ilaçlar, el feneri, radyo, pil, şarj cihazları, hijyen malzemeleri ve birinci yardım kiti gibi malzemeler size yardımcı olabilir. İhtiyacınız olan eşyaları çantadan alın ve gerektiğinde kullanın."
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt16"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingStart="15dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="3dp"
+        tools:ignore="InvalidId">
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Deprem sonrasında çevrenizdeki güvenlik durumunu değerlendirin. Eviniz veya binanızda hasar olup olmadığını kontrol edin. Eğer güvenli olmadığını düşünüyorsanız, bina içinde veya yakınında durmaktan kaçının. Yıkıntılar, çatlaklar veya diğer tehlikeli durumlar varsa yetkililere bildirin."
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt17"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingStart="15dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="3dp"
+        tools:ignore="InvalidId">
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt19"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Deprem sonrasında gaz, su ve elektrik hatlarını kontrol edin. Eğer gaz kokusu alıyorsanız veya sızıntı olduğunu düşünüyorsanız, gaz vanasını kapatın ve yetkililere haber verin. Su hasarlı hatlardan sızıyorsa veya elektrik hatları hasar görmüşse, mümkün olduğunca kullanmayın ve yetkililere bildirin."
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt18"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingStart="15dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="3dp"
+        tools:ignore="InvalidId">
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Radyo, televizyon veya cep telefonu gibi kaynaklardan haberleri ve yetkililerin talimatlarını takip edin. Yetkililerin deprem sonrası güvenlik önlemleri ve yardım hizmetleri hakkında bilgi verdiği bildirimlere dikkat edin."
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt19"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingStart="15dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="3dp"
+        tools:ignore="InvalidId">
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt21"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Komşularınızla, ailenizle ve çevrenizdeki insanlarla iletişim kurun. Yardımlaşın ve güvende olduklarını kontrol edin. İhtiyaç sahibi olanlara yardım etmek için yerel yardım kuruluşlarına veya yetkililere başvurun."
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt20"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingStart="15dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="3dp"
+        tools:ignore="InvalidId">
+    </TextView>
+
+    <TextView
+        android:id="@+id/txt22"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Deprem sonrasında ev veya mülkünüzde oluşan hasarları yetkililere bildirin. Sigorta şirketinizle iletişime geçin ve hasar bildiriminde bulunun. Deprem sonrası dökülen veya hasar gören eşyalarınızı belgelemek için fotoğraflar çekin."
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt21"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:paddingStart="15dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="50dp"
+        tools:ignore="InvalidId">
+    </TextView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

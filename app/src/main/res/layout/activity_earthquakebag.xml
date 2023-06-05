@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="409dp"
+    android:layout_height="729dp"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1913D8">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="225dp"
+            android:layout_marginTop="-11dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/bag" />
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back_arrow"
+            android:background="?android:selectableItemBackgroundBorderless"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="1dp"
+            android:padding="15dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ACİL DURUM ÇANTASI NEDİR?"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_background"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:paddingStart="12dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            tools:ignore="InvalidId">
+        </TextView>
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Acil durum çantası, bir acil durum veya felaket durumunda kullanılmak üzere hazırlanan bir taşınabilir çantadır. Deprem, sel, yangın, doğal afetler, acil tahliyeler gibi durumlar için önceden hazırlanarak kolayca erişilebilir bir şekilde tutulması amaçlanır."
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt1"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingStart="15dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="3dp"
+            tools:ignore="InvalidId">
+        </TextView>
+
+
+
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ACİL DURUM ÇANTASINDA NELER BULUNMALIDIR?"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_background"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt2"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:paddingStart="12dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="3dp"
+            tools:ignore="InvalidId">
+        </TextView>
+
+        <TextView
+            android:id="@+id/txt4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bir acil durum çantası, temel ihtiyaçları karşılamak, güvenliği sağlamak ve hayatta kalma şansını artırmak için gerekli eşyaları içerir. İçeriği kişisel ihtiyaçlara ve bölgenin özelliklerine bağlı olarak değişebilir, ancak aşağıdaki öğeler genellikle bir acil durum çantasında bulunur:"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:textColor="@color/red"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt3"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingStart="15dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="3dp"
+            tools:ignore="InvalidId">
+        </TextView>
+
+        <TextView
+            android:id="@+id/txt5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yiyecek ve Su: Uzun raf ömrüne sahip, tüketmeye hazır, dayanıklı yiyecekler ve içme suyu (tercihen şişelenmiş su) paketlenir."
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt4"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingStart="15dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="3dp"
+            tools:ignore="InvalidId">
+        </TextView>
+
+        <TextView
+            android:id="@+id/txt6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="İlaçlar: Düzenli olarak kullandığınız ilaçların yeterli miktarda bulunduğu bir ilaç seti. Acil durumda reçeteli ilaçlarınızın kopyalarını veya listelerini eklemek de önemlidir."
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt5"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingStart="15dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="3dp"
+            tools:ignore="InvalidId">
+        </TextView>
+
+        <TextView
+            android:id="@+id/txt7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="İlk Yardım Kiti: Temel birinci yardım malzemelerini içeren bir kit, küçük yaralanmaları tedavi etmek ve acil durumda sağlık sorunlarıyla başa çıkmak için kullanılır."
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt6"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingStart="15dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="3dp"
+            tools:ignore="InvalidId">
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/txt8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="El Feneri ve Ekstra Pil: Aydınlatma için taşınabilir bir el feneri ve yedek piller."
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt7"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingStart="15dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="3dp"
+            tools:ignore="InvalidId">
+        </TextView>
+
+        <TextView
+            android:id="@+id/txt9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Radyo: Pil veya pil dolumuyla çalışan bir radyo, haberleri ve güncel bilgileri takip etmek için önemlidir."
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt8"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingStart="15dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="3dp"
+            tools:ignore="InvalidId">
+        </TextView>
+
+        <TextView
+            android:id="@+id/txt10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="İletişim Araçları: Cep telefonu, şarj cihazları, yedek piller veya taşınabilir şarj cihazları."
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt9"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingStart="15dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="3dp"
+            tools:ignore="InvalidId">
+        </TextView>
+
+        <TextView
+            android:id="@+id/txt11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Battaniye: Soğuk havalarda sıcak tutmak ve barınma ihtiyaçlarını karşılamak için bir battaniye veya termal örtü."
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt10"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingStart="15dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="3dp"
+            tools:ignore="InvalidId">
+        </TextView>
+
+        <TextView
+            android:id="@+id/txt12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hijyen Malzemeleri: El temizleme jeli, ıslak mendil, tuvalet kağıdı, diş fırçası ve diş macunu gibi hijyen malzemeleri."
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt11"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingStart="15dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="3dp"
+            tools:ignore="InvalidId">
+        </TextView>
+
+        <TextView
+            android:id="@+id/txt13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kişisel Belgeler: Kimlik, pasaport, sağlık sigortası kartı, acil iletişim bilgileri gibi önemli kişisel belgelerin fotokopileri veya dijital kopyaları."
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt12"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingStart="15dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="3dp"
+            tools:ignore="InvalidId">
+        </TextView>
+
+        <TextView
+            android:id="@+id/txt14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Para: Nakit para ve küçük bozuk paralar."
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt13"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingStart="15dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="3dp"
+            tools:ignore="InvalidId">
+        </TextView>
+
+        <TextView
+            android:id="@+id/txt15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="KAÇ TANE ACİL DURUM ÇANTASI ALINMASI GEREKİR?"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_background"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt14"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:paddingStart="12dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="3dp"
+            tools:ignore="InvalidId">
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/txt16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Her hane veya aile için en az bir adet acil durum çantası bulundurması önerilir. Bu, ailenin tüm bireylerinin acil durumlarda ihtiyaç duyabileceği temel malzemelerin bir arada olduğu bir çanta olmalıdır."
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt15"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingStart="15dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="3dp"
+            tools:ignore="InvalidId">
+        </TextView>
+
+        <TextView
+            android:id="@+id/txt17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ACİL DURUM ÇANTASI SATIN ALIRKEN NELERE DİKKAT EDİLMELİ?"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_background"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt16"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:paddingStart="12dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="3dp"
+            tools:ignore="InvalidId">
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/txt18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Acil durum çantası satın alırken birkaç önemli faktöre dikkat etmek gerekmektedir. İlk olarak, çantanın dayanıklı ve su geçirmez bir malzemeden yapılmış olması önemlidir, böylece içerisindeki eşyaları koruyabilir. Ayrıca, çantanın taşınabilir ve uygun boyutta olması, kullanıcının rahatlıkla taşıyabilmesini sağlar. İç bölme ve cebe sahip olması, eşyaları düzenli tutmanızı ve kolayca erişebilmenizi sağlar. Ergonomik taşıma seçenekleri, çantanın rahatlıkla taşınabilmesini ve uzun süreli kullanımlarda bile kullanıcının rahatsızlık hissetmemesini sağlar. "
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt17"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingStart="15dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="50dp"
+            tools:ignore="InvalidId">
+        </TextView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

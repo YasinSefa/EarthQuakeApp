@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- ... diğer stiller ... -->
+        <item name="android:toolbarStyle">@style/ToolbarStyle</item>
+    </style>
+
+    <style name="ToolbarStyle" parent="Widget.AppCompat.Toolbar">
+        <item name="android:navigationIcon">@drawable/ic_back_arrow</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="HelpActivityTheme" parent="Theme.MaterialComponents.Light">
+        <!-- ActionBar rengi -->
+        <item name="colorPrimary">@color/your_primary_color</item>
+
+        <!-- ActionBar üzerindeki metin rengi -->
+        <item name="android:textColorPrimary">@color/your_text_color_primary</item>
+
+        <!-- ActionBar üzerindeki ikon rengi -->
+        <item name="android:textColorSecondary">@color/your_text_color_secondary</item>
+
+        <!-- TextInputLayout üzerindeki çizgi rengi -->
+        <item name="colorControlNormal">@color/your_line_color</item>
+
+        <!-- TextInputLayout üzerindeki hata metni rengi -->
+        <item name="errorTextColor">@color/your_error_color</item>
+
+        <!-- TextInputEditText üzerindeki metin rengi -->
+        <item name="android:textColor">@color/your_text_color</item>
+
+        <!-- TextInputEditText üzerindeki seçim rengi -->
+        <item name="colorControlActivated">@color/your_selection_color</item>
+
+        <!-- TextInputEditText üzerindeki metin gölgesi rengi -->
+        <item name="android:shadowColor">@color/your_shadow_color</item>
+
+        <!-- Diğer tema özelliklerini buraya ekleyebilirsiniz -->
+    </style>
+</resources>
